@@ -15,6 +15,11 @@ export default function Textbox(props) {
     const newText = text.toLowerCase();
     SetText(newText);
   };
+  const handleClearText = (event) => {
+    console.log("LoClicked " + text);
+    const newText = "";
+    SetText(newText);
+  };
 
   const [text, SetText] = useState("");
   // SetText = "sarthak"
@@ -40,6 +45,9 @@ export default function Textbox(props) {
           </button>
           <button className="btn btn-primary2 my-3 mx-3" onClick={handleLoClick}>
             Convert to lowerCase
+          </button>
+          <button className="btn btn-primary2 my-3 mx-3" onClick={handleClearText}>
+            Clear Text
           </button>
           <div className="container2  my-4" >
             <h3>Summary of the paragraph</h3>
