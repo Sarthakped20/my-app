@@ -45,6 +45,8 @@ export default function Textbox(props) {
             <h3>Summary of the paragraph</h3>
             <p>The above text contains { text.split(" ").length} words and {text.length}characters.</p>
             <p>{0.008 * text.split(" ").length *60} seconds to read the paragraph.</p>
+            <h3>Preview</h3>
+            <p>{text}</p>
           </div>
         </div>
       </div>
