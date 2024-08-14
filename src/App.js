@@ -2,7 +2,9 @@
 import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar';
-import Textbox from './components/Textbox';
+import About from './components/About';
+// import Textbox from './components/Textbox';
+
 
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
              aboutText= "About US"/>
 
     <div className="container my-4">
-      <Textbox heading="Enter the text to analyse" />
+      {/* <Textbox heading="Enter the text to analyse" /> */}
+      <About/>
     </div>         
          
     </>
